@@ -1,5 +1,6 @@
 function getID($id){
-    if(document.getElementById($id)) return document.getElementById($id);
+    var doc = document;
+    if(doc.getElementById($id)) return doc.getElementById($id);
     else return false;
 }
 
