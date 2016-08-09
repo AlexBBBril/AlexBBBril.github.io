@@ -17,7 +17,7 @@ window.onload = function(){
 
         setTimeout( function(){
             showElem(getID('contact'));
-        }, 1500 );
+        }, 1400 );
 
         function showElem(elem){
             var opacity = +elem.style.opacity;
