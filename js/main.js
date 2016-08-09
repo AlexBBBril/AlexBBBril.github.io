@@ -17,6 +17,7 @@ window.onload = function(){
 
         setTimeout( function(){
             showElem(getID('contact'));
+            getID('contact').classList.add('transition');
         }, 1400 );
 
         function showElem(elem){
@@ -33,8 +34,30 @@ window.onload = function(){
                 }
             }, 2);
         }
-
     }
-
-
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
