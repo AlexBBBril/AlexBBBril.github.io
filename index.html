@@ -23,9 +23,56 @@
         <div class="wrapper">
             <div class="welcome">
                 <h1 id="welcome">Alex Bril</h1>
-                <a href="mailto:brilcoder@gmail.com" id="contact" class="contact" title="Contact with me on my email">Contact me</a>
+                <span id="contact" class="contact" title="Contact with me on my email">Contact me</span>
             </div>
         </div>
+
+        <iframe name="hidden_iframe" class="display-none" id="hidden_iframe"></iframe>
+        <form id="form-mail" class="form-mail display-none" action="https://docs.google.com/forms/d/e/1FAIpQLSc-mrvVpeRchtD4m6imW5nd18iYk8aUoFr4a58tPhfmw1HEEw/formResponse" method="POST" target="hidden_iframe">
+            <span id="close-form" class="close"></span>
+            <fieldset>
+                <legend>Contact with me</legend>
+                <div role="listitem">
+                    <label class="label-form">
+                        <span class="title-input">Your name <span class="red-star">*</span></span>
+                        <input class="form-value" data-type="name" type="text" name="entry.228811083" value="" dir="auto" aria-label="Ваше имя  " title="">
+                    </label>
+                </div>
+
+                <div role="listitem">
+                    <label class="label-form">
+                        <span class="title-input">Your e-mail <span class="red-star">*</span></span>
+                        <input class="form-value" data-type="mail" type="text" name="entry.200862356" value="" dir="auto" aria-label="Ваш e-mail  " title="">
+                    </label>
+                </div>
+
+                <div role="listitem">
+                    <label class="label-form">
+                        <span class="title-input">Your phone</span>
+                        <input class="form-value" data-type="phone" type="text" name="entry.956234191" value="" dir="auto" aria-label="Ваш телефон  " title="">
+                    </label>
+                </div>
+
+                <div role="listitem">
+                    <label>
+                        <p class="title-textarea">Your message <span class="red-star">*</span></p>
+                        <textarea class="form-value" data-type="message" name="entry.1839990719" dir="auto" aria-label="Введите Ваше сообщение"></textarea>
+                    </label>
+                </div>
+
+
+
+                <input type="hidden" name="draftResponse" value="[,,&quot;4624660599541595951&quot;]">
+                <input type="hidden" name="pageHistory" value="0">
+                <input type="hidden" name="usp" value="mail_form_submit">
+                <input type="hidden" name="fbzx" value="4624660599541595951">
+
+                <div class="submit-wrap">
+                    <input id="send-message" type="submit" name="submit" value="Готово">
+                </div>
+            </fieldset>
+        </form>
+
     </main>
 
     <script src="js/main.js"></script>

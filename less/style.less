@@ -209,6 +209,7 @@ main{
   -moz-box-shadow: 0 0 2px #000;
   box-shadow: 0 0 2px #000;
   text-shadow: 1px 1px 2px #444;
+  cursor: pointer;
 }
 .transition{
   -webkit-transition: all 0.2s;
@@ -219,10 +220,141 @@ main{
 }
 .contact:hover{
   text-shadow:0 0 2px #444;
-  //color:#00FFFF;
   background: #333 none repeat scroll 0 0;
   border-color: #222;
 }
+
+.form-mail {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-height: 330px;
+  max-width: 400px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 20px 0 0;
+
+  .close {
+    background: rgba(0, 0, 0, 0) url("../images/close.png") repeat scroll 0 0;
+    -webkit-background-size: 15px auto;
+    background-size: 15px auto;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    right: -100%;
+    width: 15px;
+  }
+
+  fieldset{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0 10px 10px;
+    border: 2px solid #00b5e2;
+    background: rgba(0, 0, 0, 0.4) url("../images/bg_main.png") repeat scroll 0 0;
+
+    legend {
+      color: #00b5e2;
+      padding: 0 10px;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .submit-wrap{
+    text-align: right;
+
+    input {
+      border: medium none;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      -webkit-box-shadow: 1px 1px 2px #000 ;
+      -moz-box-shadow: 1px 1px 2px #000 ;
+      box-shadow: 1px 1px 2px #000 ;
+      margin-top: 10px;
+      padding: 2px 20px;
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0) linear-gradient(to top, rgba(44, 84, 98, 0.75) 10%, rgba(0, 181, 226, 0.5) 50%, rgba(44, 84, 98, 0.75) 90%) repeat scroll 0 0;
+      background: -webkit-linear-gradient(to top, rgba(44, 84, 98, 0.75) 10%, rgba(0, 181, 226, 0.5) 50%, rgba(44, 84, 98, 0.75) 90%);
+      background: -moz-linear-gradient(to top, rgba(44, 84, 98, 0.75) 10%, rgba(0, 181, 226, 0.5) 50%, rgba(44, 84, 98, 0.75) 90%);
+      background: -ms-linear-gradient(to top, rgba(44, 84, 98, 0.75) 10%, rgba(0, 181, 226, 0.5) 50%, rgba(44, 84, 98, 0.75) 90%);
+      background: -o-linear-gradient(to top, rgba(44, 84, 98, 0.75) 10%, rgba(0, 181, 226, 0.5) 50%, rgba(44, 84, 98, 0.75) 90%);
+      color:#fff;
+    }
+
+    input[required] {
+      opacity: 0.3;
+    }
+  }
+  .title-textarea {
+    margin: 20px 0 10px;
+    text-align: center;
+  }
+  .red-alert {
+    background: #f00 none repeat scroll 0 0;
+    color: #fff;
+  }
+
+  textarea {
+    border: medium none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-height: 100px;
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 2px #000 inset;
+    -moz-box-shadow: 1px 1px 2px #000 inset;
+    box-shadow: 1px 1px 2px #000 inset;
+    padding: 3px 5px;
+    background: #ccc;
+  }
+  .label-form {
+    display: block;
+    margin: 10px 0;
+
+    .red-alert {
+      background: #f00 none repeat scroll 0 0;
+      color: #fff;
+    }
+    .title-input {
+      display: inline-block;
+      max-width: 100px;
+      width: 100%;
+    }
+
+    input {
+      background: rgba(0, 0, 0, 0) linear-gradient(to top, rgba(44, 84, 98, 0.75) 10%, rgba(0, 181, 226, 0.5) 50%, rgba(44, 84, 98, 0.75) 90%) repeat scroll 0 0;
+      background: -webkit-linear-gradient(to top, rgba(44, 84, 98, 0.75) 10%, rgba(0, 181, 226, 0.5) 50%, rgba(44, 84, 98, 0.75) 90%);
+      background: -moz-linear-gradient(to top, rgba(44, 84, 98, 0.75) 10%, rgba(0, 181, 226, 0.5) 50%, rgba(44, 84, 98, 0.75) 90%);
+      background: -ms-linear-gradient(to top, rgba(44, 84, 98, 0.75) 10%, rgba(0, 181, 226, 0.5) 50%, rgba(44, 84, 98, 0.75) 90%);
+      background: -o-linear-gradient(to top, rgba(44, 84, 98, 0.75) 10%, rgba(0, 181, 226, 0.5) 50%, rgba(44, 84, 98, 0.75) 90%);
+      border: medium none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      padding: 3px 5px;
+      -webkit-box-shadow: 1px 1px 2px #000 inset;
+      -moz-box-shadow: 1px 1px 2px #000 inset;
+      box-shadow: 1px 1px 2px #000 inset;
+      color: #fff;
+      width: calc(~"100% - 108px");
+      width: -moz-calc(~"100% - 108px");
+      width: -webkit-calc(~"100% - 108px");
+      width: -o-calc(~"100% - 108px");
+    }
+  }
+}
+.display-none{
+  display: none;
+}
+.red-star{
+  color: #f00;
+}
+
  /* ---------------------------------------------------------------------------
                                         MEDIA QUERIES
  --------------------------------------------------------------------------- */
